@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Notes from the road — culture, guides, and wellness.">
+<title>Journal — Sanchari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="utility"><div class="wrap">
+    <div class="u-left">
+      <a href="tel:+917337428436">☏ +91 73374 28436</a>
+      <span class="divider"></span>
+      <a href="https://wa.me/917337428436">WhatsApp us</a>
+      <span class="divider"></span>
+      <a href="mailto:hello@sanchari.travel">hello@sanchari.travel</a>
+    </div>
+    <div class="u-right">
+      <select onchange="toast('Currency · '+this.value)"><option>INR ₹</option><option>USD $</option><option>GBP £</option><option>AED د.إ</option></select>
+      <span class="divider"></span>
+      <button class="theme-toggle" onclick="toggleTheme()">Theme</button>
+      <span class="divider"></span>
+      <a href="login.html">Sign in</a>
+    </div>
+  </div></div>
+  <div class="masthead">
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">☰</button>
+    <div class="util-mobile"><button class="theme-toggle" onclick="toggleTheme()">☾</button></div>
+    <svg class="emblem" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M13 32 L13 25 L15 25 L15 20 L17 20 L17 15 L18 15 L18 10 L20 6 L22 10 L22 15 L23 15 L23 20 L25 20 L25 25 L27 25 L27 32 Z" fill="currentColor" fill-opacity=".1"/>
+      <path d="M10 32 Q14 28 20 32 Q26 28 30 32"/>
+      <path d="M12 32 Q16 30 20 32 Q24 30 28 32"/>
+      <circle cx="20" cy="4" r="1.2" fill="currentColor"/>
+    </svg>
+    <a class="brand" href="index.html">SANCHARI</a>
+    <div class="tagline">Curated journeys through the soul of the South</div>
+    <div class="ornament"><span class="line"></span><span class="diamond hollow"></span><span class="diamond"></span><span class="diamond hollow"></span><span class="line"></span></div>
+    <nav class="main" id="nav">
+      <a class="" href="index.html">Home</a>
+      <a class="" href="packages.html">Journeys</a>
+      <a class="" href="about.html">Our story</a>
+      <a class="active" href="blog.html">Journal</a>
+      <a class="" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow" style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--accent);letter-spacing:.14em;text-transform:uppercase">Journal</div><h2>Notes from the road</h2></div></div>
+    <div class="grid-3" id="blogList"></div>
+  </div>
+</section>
+
+</main>
+<footer class="site">
+  <div class="wrap cols">
+    <div>
+      <div class="brand" style="margin-bottom:8px;font-size:26px;letter-spacing:.28em;padding-left:.28em">SANCHARI</div>
+      <p style="max-width:340px">Curated South-India journeys — temple circuits, adventure, and Ayurvedic wellness.</p>
+    </div>
+    <div><h4>Explore</h4>
+      <a href="packages.html?cat=temple">Temple tours</a>
+      <a href="packages.html?cat=adventure">Adventure</a>
+      <a href="packages.html?cat=wellness">Wellness</a>
+      <a href="blog.html">Journal</a>
+    </div>
+    <div><h4>Company</h4>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div><h4>Support</h4>
+      <a href="https://wa.me/917337428436">WhatsApp</a>
+      <a href="mailto:hello@sanchari.travel">hello@sanchari.travel</a>
+      <a href="login.html">My bookings</a>
+    </div>
+  </div>
+  <div class="wrap fine">
+    <span>© 2026 Sanchari · sanchari.travel</span>
+    <span>All rights reserved</span>
+  </div>
+</footer>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
